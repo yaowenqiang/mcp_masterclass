@@ -1,7 +1,7 @@
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 mcp = FastMCP('weather')
 
-@mcp.tool()
+@mcp.tool
 def get_weather(location: str) -> str:
     """
     Gets the weather given a location
