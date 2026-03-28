@@ -10,9 +10,20 @@ from pathlib import Path
 
 import pyautogui
 from fastmcp import FastMCP
+from fastmcp.utilities.types import Image
 
 mcp = FastMCP("screenshot")
 
+@mcp.tool
+def capture_screen_shoot() -> Image:
+    """
+    Capture the current screen and return the image, use this tool whenever the user requests
+    a screenshoot of their activity.
+    """
+    buffer = io.BytesIO()
+    screen_shot = pyautogui.screenshot()
+    screen_shot.convert('RGB').save(buffer, format='JPEG', quality=60, optmize=True)
+    return Image(data=buffer.getvalue(), format='jpeg')
 
 @mcp.tool
 def capture_full_screen(save_path: str | None = None) -> str:
