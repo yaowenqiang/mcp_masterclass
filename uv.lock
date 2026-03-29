@@ -680,6 +680,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "fastmcp" },
     { name = "pyautogui" },
+    { name = "pydantic" },
     { name = "requests" },
 ]
 
@@ -687,6 +688,7 @@ dependencies = [
 requires-dist = [
     { name = "fastmcp", specifier = ">=3.1.1" },
     { name = "pyautogui", specifier = ">=0.9.54" },
+    { name = "pydantic", specifier = ">=2.12.5" },
     { name = "requests", specifier = ">=2.33.0" },
 ]
 

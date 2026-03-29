@@ -4,3 +4,5 @@
 > mcp dev weather.py
 
 > fastmcp  list --command 'npx -y @openbnb/mcp-server-airbnb --ignore-robots-txt'
+
+> https://docs.perplexity.ai/docs/getting-started/pricing
