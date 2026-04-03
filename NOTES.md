@@ -8,3 +8,5 @@
 > https://docs.perplexity.ai/docs/getting-started/pricing
 
 > https://modelcontextprotocol.io/docs/learn/client-concepts
+
+> fastmcp run -t streamable-http stream_server.py
